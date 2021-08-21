@@ -4,6 +4,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "Forecast.js",
   "dependencies": {
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1"
@@ -23,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/alaa-rish/city-explorer-api/issues"
   },
-  "homepage": "https://github.com/alaa-rish/city-explorer-api#readme"
+  "homepage": "https://github.com/alaa-rish/city-explorer-api#readme",
+  "type": "module"
 }

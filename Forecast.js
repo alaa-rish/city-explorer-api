@@ -7,4 +7,4 @@ class Forecast {
     }
 }
 
-module.exports = Forecast;
+export default Forecast;
