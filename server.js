@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 
 import getWeather from './weather.js';
 import getMovies from './movies.js';
+import getResturants from './yelp.js';
 
 dotenv.config();
 
@@ -32,6 +33,8 @@ server.use(cors(corsOpts));
 server.get('/weather', getWeather);
 
 server.get('/movies', getMovies);
+
+server.get('/yelp', getResturants);
 
 server.get('/test', (request, response) =>  {
     response.send('Your server is working');
