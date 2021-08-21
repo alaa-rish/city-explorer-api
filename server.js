@@ -29,9 +29,10 @@ server.get('/weather', (request, response) =>  {
     let lon = request.query.lon;
     let searchQuery = request.query.searchQuery;
     let res = weather.find(city => lat.startsWith(city.lat + '') && lon.startsWith(city.lon + '') && searchQuery.toLowerCase().includes(city.city_name.toLowerCase()));
-    if (res === undefined || res === null || res.length === 0)
+    if (res === undefined || res === null || res.length === 0) {
+        response.status(500);  
       response.send('Error: no city found!');
-    else {
+    } else {
         let data = [];
         res.data.forEach(cityData => {
             data.push(new Forecast(cityData.weather.description, cityData.valid_date));
