@@ -45,3 +45,12 @@ Start time: 7:00
 Finish time: 9:00
 
 Actual time needed to complete: 2 hours.
+
+Name of feature:City Explorer_lab9
+Estimate of time needed to complete: 2 hours
+
+Start time: 9:00
+
+Finish time: 9:45
+
+Actual time needed to complete: 45 mins.
